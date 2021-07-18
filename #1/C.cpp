@@ -2,20 +2,9 @@
 using namespace std;
 
 int main(){
-    int x,y;
+    long long   x,y;
     cin >> x >> y ;
-    char c;
-    cin >> c;
-    switch (c) {
-        case '+':
-            cout << x << " " << c << " " << y << " = " << x+y;
-            break;
-        case '-':
-            cout << x << " " << c << " " << y << " = " << x-y;
-            break;
-        case '*':
-            cout << x << " " << c << " " << y << " = " << x*y;
-            break;
-    }
-
+    cout <<x << " + " << y << " = " << x+y <<endl;
+    cout <<x << " * " << y << " = " << x*y <<endl;
+    cout <<x << " - " << y << " = " << x-y <<endl;
 }
