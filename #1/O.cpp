@@ -13,6 +13,4 @@ int main(){
         cout << x*y;
     else if (c=='/')
         cout << x/y;
-    else
-        cout << "Wrong Operator";
 }

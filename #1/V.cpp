@@ -7,7 +7,7 @@ int main(){
     cin >> x >> c >> y;
     if((x-y>0 && c=='>') || (x-y<0 && c=='<') || (x-y==0 && c=='='))
         cout <<"Right";
-    else if((x-y>0 && c=='<') || (x-y<0 && c=='>') || (x-y!=0 && c=='='))
+    else
         cout <<"Wrong";
 }
 

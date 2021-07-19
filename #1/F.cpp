@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int x,y;
+    long long x,y;
     cin >> x >> y;
-    cout << (x%10 + y%10);
+    cout << (x%10+y%10);
 }
