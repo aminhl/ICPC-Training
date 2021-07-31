@@ -1,9 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    float r;
+int main() {
+    double r;
     cin >> r;
-    const double pi = 3.141592653;
-    cout << fixed << setprecision(9) << pow(2,r) * pi;
+    cout << fixed << setprecision(9) <<  pow(r,2.0)*3.141592653;
 }
