@@ -7,24 +7,18 @@ int main() {
     while (n--){
         string s,t;
         cin >> s >> t;
-        if (s.size() > t.size()){
-            for (int i = 0; i <t.size() ; ++i)
-                cout << s[i] << t[i];
-            for (int i = t.size(); i <s.size() ; ++i)
+        int mini = min(s.size(),t.size());
+        for (int i = 0; i <mini ; ++i)
+            cout << s[i] << t[i];
+        int maxi = max(s.size(),t.size());
+        if (maxi == s.size()){
+            for (int i = mini; i <maxi ; ++i)
                 cout << s[i];
-            cout << endl;
         }
-        if (s.size() < t.size()){
-            for (int i = 0; i <s.size() ; ++i)
-                cout << s[i] << t[i];
-            for (int i = s.size(); i <t.size() ; ++i)
+        if (maxi == t.size()){
+            for (int i = mini; i <maxi ; ++i)
                 cout << t[i];
-            cout << endl;
         }
-        if (s.size() == t.size()){
-            for (int i = 0; i <t.size() ; ++i)
-                cout << s[i]<<t[i];
-            cout << endl;
-        }
+        cout << endl;
     }
 }
